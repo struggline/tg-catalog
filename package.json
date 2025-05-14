@@ -1,9 +1,15 @@
 {
+  "scripts": {
+    "start:dev": "npx tsx --watch ./src/index.ts"
+  },
   "devDependencies": {
     "@types/node": "^22.15.17",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@grammyjs/conversations": "^2.1.0",
+    "@grammyjs/menu": "^1.3.0",
+    "dotenv": "^16.5.0",
     "fast-xml-parser": "^5.2.3",
     "grammy": "^1.36.1"
   }
