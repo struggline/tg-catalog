@@ -15,7 +15,7 @@ export function createRequestFormData(filters: Partial<Record<SearchFilters, str
 
     let filterIdx = 1;
     for (const [filter, value] of Object.entries(filters) as [SearchFilters, string][]) {
-        if (filterIdx > 5) break;
+        if (filterIdx > 4) break;
 
         formData.set(`data[${filterIdx}][field]`, filter);
         formData.set(`data[${filterIdx}][value]`, value);
